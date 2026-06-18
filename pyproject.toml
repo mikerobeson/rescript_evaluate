@@ -1,5 +1,5 @@
 [project]
-name = "rescript_eval"
+name = "rescript_evaluate"
 authors = [
     { name = "Nicholas Bokulich", email = "nbokulich@gmail.com" }
 ]

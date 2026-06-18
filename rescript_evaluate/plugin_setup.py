@@ -25,7 +25,7 @@ from q2_types.tree import Phylogeny, Rooted
 from q2_feature_classifier.classifier import (_parameter_descriptions,
                                               _classify_parameters)
 from q2_feature_classifier._taxonomic_classifier import TaxonomicClassifier
-import rescript_eval
+import rescript_evaluate
 import rescript
 
 from rescript.types._type import SILVATaxonomy, SILVATaxidMap
@@ -34,12 +34,12 @@ from rescript.ncbi import (
     get_ncbi_data, _default_ranks, _allowed_ranks, get_ncbi_data_protein)
 
 
-citations = Citations.load('citations.bib', package='rescript_eval')
+citations = Citations.load('citations.bib', package='rescript_evaluate')
 
 plugin = Plugin(
-    name='rescript_eval',
+    name='rescript_evaluate',
     version=rescript.__version__,
-    website="https://github.com/nbokulich/RESCRIPt",
+    website="https://github.com/mikerobeson/rescript_evaluate",
     package='rescript',
     description=('Supplementary RESCRIPt tools for '
                  'reference sequence and taxonomy evaluation.'),

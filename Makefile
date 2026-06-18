@@ -12,7 +12,7 @@ test: all
 	py.test
 
 test-cov: all
-	py.test --cov=rescript_eval
+	py.test --cov=rescript_evaluate
 
 install: all
 	$(PYTHON) -m pip install -v .

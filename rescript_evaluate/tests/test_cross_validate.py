@@ -12,8 +12,8 @@ import qiime2
 import pandas as pd
 import pandas.testing as pdt
 
-from qiime2.plugins import rescript_eval
-from rescript_eval import cross_validate
+from qiime2.plugins import rescript_evaluate
+from rescript_evaluate import cross_validate
 from ..cross_validate import _evaluate_classifications_stats
 
 
@@ -21,7 +21,7 @@ import_data = qiime2.Artifact.import_data
 
 
 class TestPipelines(TestPluginBase):
-    package = 'rescript_eval.tests'
+    package = 'rescript_evaluate.tests'
 
     def setUp(self):
         super().setUp()
@@ -149,7 +149,7 @@ class TestPipelines(TestPluginBase):
 
 
 class TestTaxaUtilities(TestPluginBase):
-    package = 'rescript_eval.tests'
+    package = 'rescript_evaluate.tests'
 
     def setUp(self):
         super().setUp()
@@ -198,7 +198,7 @@ class TestTaxaUtilities(TestPluginBase):
 
 
 class TestRelabelStratifiedTaxonomy(TestPluginBase):
-    package = 'rescript_eval.tests'
+    package = 'rescript_evaluate.tests'
 
     def setUp(self):
         super().setUp()
