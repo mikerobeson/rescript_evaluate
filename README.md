@@ -1,6 +1,5 @@
-:construction: 
-**Note: this repo is still under develoopment.**
- :construction: 
+ [![DOI](https://img.shields.io/badge/DOI-10.1371/journal.pcbi.1009581-B31B1B)](http://dx.doi.org/10.1371/journal.pcbi.1009581)
+ <p align="left"><img src="logo.png" height="150" /></p>
 
 # RESCRIPt-evaluate
 
