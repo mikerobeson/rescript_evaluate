@@ -31,7 +31,7 @@ qiime rescript-eval --help
 
 ## Tutorials that contain examples of some components of RESCRIPt-eval
 
-*Note: the tutorials may not be updated to point to this repo for a while. Som when you see references to use `evaluate-cross-validate` and `evaluate-fit-classifier`, they will not work unless this repo is installed.*
+*Note: the tutorials may not be updated to point to this repo for a while. When you see references to use RESCRIPt's actions `evaluate-cross-validate` and `evaluate-fit-classifier`, they will not work unless this repo is installed. In which case you'll run `qiime rescript-evaluate evaluate-cross-validate...`.*
 
 These tutorials demonstrate some of the basic functionality of RESCRIPT and RESCRIPt-eval, via the q2CLI (QIIME 2 command-line interface):
 - [General Overview and working with SILVA data](https://forum.qiime2.org/t/rescript-sequence-reference-database-management-tutorial/15494)
