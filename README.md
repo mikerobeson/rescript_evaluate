@@ -24,7 +24,7 @@ qiime dev refresh-cache
 
 To view a help menu for using `rescript-eval` via the QIIME 2 CLI:
 ```
-qiime rescript-eval --help
+qiime rescript-evaluate --help
 ```
 
 ## Tutorials that contain examples of some components of RESCRIPt-eval
