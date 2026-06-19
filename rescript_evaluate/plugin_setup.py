@@ -6,33 +6,16 @@
 # The full license is in the file LICENSE, distributed with this software.
 # ----------------------------------------------------------------------------
 
-import importlib
 
-from q2_types.genome_data import GenomeData, Loci, Proteins, Genes, DNASequence
-from q2_types.metadata import ImmutableMetadata
-from qiime2.core.type import TypeMatch
-from qiime2.plugin import (Str, Plugin, Choices, List, Citations, Range, Int,
-                           Float, Visualization, Bool, TypeMap, Metadata,
-                           MetadataColumn, Categorical, Numeric, Collection)
-
+from qiime2.plugin import (Plugin, Citations, Range, Int,
+                           Visualization)
 from .cross_validate import (evaluate_cross_validate,
-                            #  evaluate_classifications,
                              evaluate_fit_classifier)
-
-from q2_types.feature_data import (FeatureData, Taxonomy, Sequence,
-                                    AlignedSequence, RNASequence,
-                                    AlignedRNASequence, ProteinSequence)
-from q2_types.tree import Phylogeny, Rooted
+from q2_types.feature_data import (FeatureData, Taxonomy, Sequence)
 from q2_feature_classifier.classifier import (_parameter_descriptions,
                                               _classify_parameters)
 from q2_feature_classifier._taxonomic_classifier import TaxonomicClassifier
-import rescript_evaluate
 import rescript
-
-from rescript.types._type import SILVATaxonomy, SILVATaxidMap
-from rescript.types.methods import reverse_transcribe
-from rescript.ncbi import (
-    get_ncbi_data, _default_ranks, _allowed_ranks, get_ncbi_data_protein)
 
 
 citations = Citations.load('citations.bib', package='rescript_evaluate')

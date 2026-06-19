@@ -7,7 +7,6 @@
 # ----------------------------------------------------------------------------
 
 from qiime2.plugin.testing import TestPluginBase
-from qiime2.plugins import rescript
 import qiime2
 import pandas as pd
 import pandas.testing as pdt
@@ -69,8 +68,9 @@ class TestPipelines(TestPluginBase):
 
     def test_evaluate_fit_classifier(self):
         # exp species should equal the input taxonomy when k='disable'
-        classifier, evaluation, obs = rescript_evaluate.actions.evaluate_fit_classifier(
-            self.seqs, self.taxa)
+        classifier, evaluation, obs = \
+            rescript_evaluate.actions.evaluate_fit_classifier(
+                self.seqs, self.taxa)
         # obs species will equal best possible predictive accuracy.
         exp_obs = pd.Series({
             'A1': palvei,

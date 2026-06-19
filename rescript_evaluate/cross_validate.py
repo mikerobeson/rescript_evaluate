@@ -13,10 +13,7 @@ from warnings import filterwarnings
 from sklearn.model_selection import StratifiedKFold
 
 from q2_types.feature_data import DNAFASTAFormat, DNAIterator
-import rescript
 from rescript.cross_validate import _validate_index_is_superset
-import rescript.evaluate
-from rescript.evaluate import _taxonomic_depth, _process_labels
 
 
 def evaluate_fit_classifier(ctx,
@@ -231,4 +228,3 @@ def _validate_indices_match(idx1, idx2):
     if len(diff) > 0:
         raise ValueError('Input features must match. The following features '
                          'are missing from one input: ' + ', '.join(diff))
-
